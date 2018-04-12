@@ -312,7 +312,9 @@ require([
         dom.byId("DistToEnd").innerHTML = "";
         dom.byId("EndXY").innerHTML = "";
         if(queryResultsLyr.graphics.items[0]){
-        NYSubWayStops.visible = true;
+            if(view.zoom > 12){
+            NYSubWayStops.visible = true;
+        }
         }
         queryResultsLyr.removeAll();
         initStartPoint();
