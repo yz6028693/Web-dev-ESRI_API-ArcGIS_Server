@@ -5,5 +5,5 @@ Node: this project is still under developing, I will add MTA real time subway in
 Here is a demo of this project:
 
 
-<a><img src="Gifs&Images/demo.gif" width = 90% position = 'ralative'></a>
+<a><img src="Gifs&Images/Demo.gif" width = 90% position = 'ralative'></a>
 
