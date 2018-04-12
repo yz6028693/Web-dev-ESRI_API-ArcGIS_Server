@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="initial-scale=1,maximum-scale=1,user-scalable=no">
+  <title>Mini Web Project (Zhen)</title>
+
+  <style>
+    html,
+    body,
+    #viewDiv {
+      padding: 0;
+      margin: 0;
+      height: 100%;
+      width: 100%;
+    }
+
+    #optionsDiv {
+      background-color: dimgray;
+      color: white;
+      padding: 0px 0px 0px 10px;
+      border-bottom-left-radius: 5px;
+      max-width: 470px;
+    }
+
+    #Reselect {
+      margin-bottom: 3%;
+    }
+
+    .esri-popup .esri-popup-header .esri-title {
+      font-size: 18px;
+      font-weight: bolder;
+    }
+
+    .esri-popup .esri-popup-body .esri-popup-content {
+      font-size: 14px;
+    }
+
+  </style>
+  <link rel="stylesheet" href="https://js.arcgis.com/4.6/esri/themes/dark/main.css">
+  <script src="https://js.arcgis.com/4.6/"></script>
+  <script src='JS/main.js'> </script>
+  <script src='JS/RouteRenderer.js'> </script>
+</head>
+
+<body>
+  <div id="viewDiv">
+    <!-- <div id="BasemapToggle"></div> -->
+  </div>
+  <div id="optionsDiv">
+    <h3>Please click on the map to create start and end points</h3>
+    <p><span id="StartXY"></span></p>
+    <p><span id="EndXY"></span></p>
+    <p><span id="DistToStart"></span></p>
+    <p><span id="DistToEnd"></span></p>
+    <button id ="Reselect">Reselect</button>
+    
+  </div>
+</body>
+
+</html>
